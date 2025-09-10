@@ -16,10 +16,10 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Modern blue/purple tech gradient */
-    --primary: 262 83% 58%;
+    /* Primary - Modern pink tech gradient */
+    --primary: 330 81% 60%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 262 83% 65%;
+    --primary-hover: 330 81% 67%;
 
     /* Secondary - Subtle accent */
     --secondary: 240 5% 13%;
@@ -46,18 +46,18 @@
     /* Borders and inputs */
     --border: 240 6% 20%;
     --input: 240 6% 20%;
-    --ring: 262 83% 58%;
+    --ring: 330 81% 60%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(292, 84%, 61%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(330, 81%, 60%) 0%, hsl(320, 85%, 65%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(240, 5%, 13%) 0%, hsl(240, 5%, 18%) 100%);
     --gradient-success: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(158, 64%, 52%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(292, 84%, 61%) 50%, hsl(322, 85%, 64%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(330, 81%, 60%) 0%, hsl(320, 85%, 65%) 50%, hsl(310, 87%, 70%) 100%);
 
     /* Shadows and glows */
-    --shadow-primary: 0 10px 30px -10px hsl(262 83% 58% / 0.4);
+    --shadow-primary: 0 10px 30px -10px hsl(330 81% 60% / 0.4);
     --shadow-card: 0 4px 20px -4px hsl(240 5% 8% / 0.6);
-    --glow-primary: 0 0 20px hsl(262 83% 58% / 0.3);
+    --glow-primary: 0 0 20px hsl(330 81% 60% / 0.3);
 
     /* Animation variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,12 +68,12 @@
     /* Sidebar */
     --sidebar-background: 240 10% 3.9%;
     --sidebar-foreground: 0 0% 85%;
-    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary: 330 81% 60%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 5% 11%;
     --sidebar-accent-foreground: 0 0% 85%;
     --sidebar-border: 240 6% 20%;
-    --sidebar-ring: 262 83% 58%;
+    --sidebar-ring: 330 81% 60%;
   }
 
   .dark {
