@@ -10,7 +10,8 @@ import {
   Users, 
   Activity,
   Zap,
-  Bot
+  Bot,
+  Flower
 } from "lucide-react";
 
 interface SidebarProps {
@@ -63,8 +64,9 @@ const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
       {/* Logo */}
       <div className="p-6 border-b border-sidebar-border">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center relative">
             <Bot className="w-5 h-5 text-white" />
+            <Flower className="w-3 h-3 text-pink-400 absolute -top-1 -right-1" />
           </div>
           <div>
             <h2 className="font-bold text-sidebar-foreground">RAG Bot</h2>

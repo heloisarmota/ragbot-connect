@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MessageSquare, FileText, Users, Bot, TrendingUp, Activity, Zap, Brain } from "lucide-react";
+import { MessageSquare, FileText, Users, Bot, TrendingUp, Activity, Zap, Brain, Flower } from "lucide-react";
 
 const Dashboard = () => {
   const stats = [
@@ -60,7 +60,10 @@ const Dashboard = () => {
             Logs
           </Button>
           <Button className="bg-gradient-primary hover:opacity-90 shadow-primary">
-            <Bot className="w-4 h-4 mr-2" />
+            <div className="flex items-center mr-2 relative">
+              <Bot className="w-4 h-4" />
+              <Flower className="w-2 h-2 text-pink-200 absolute -top-1 -right-1" />
+            </div>
             Testar Bot
           </Button>
         </div>
