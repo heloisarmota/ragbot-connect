@@ -3,6 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import Dashboard from "@/components/Dashboard";
 import KnowledgeBase from "@/components/KnowledgeBase";
 import Conversations from "@/components/Conversations";
+import PdfConverter from "@/components/PdfConverter";
 import Settings from "@/components/Settings";
 
 const Index = () => {
@@ -16,6 +17,8 @@ const Index = () => {
         return <KnowledgeBase />;
       case "conversations":
         return <Conversations />;
+      case "converter":
+        return <PdfConverter />;
       case "settings":
         return <Settings />;
       default:

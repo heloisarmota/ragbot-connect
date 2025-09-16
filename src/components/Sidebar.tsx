@@ -55,6 +55,12 @@ const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
       badge: null
     },
     {
+      id: "converter",
+      label: "Conversor PDF",
+      icon: FileText,
+      badge: null
+    },
+    {
       id: "settings",
       label: "Configurações",
       icon: Settings,
