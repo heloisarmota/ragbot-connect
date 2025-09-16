@@ -11,8 +11,10 @@ import {
   Activity,
   Zap,
   Bot,
-  Flower
+  Flower,
+  LogOut
 } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface SidebarProps {
   activeTab: string;
@@ -20,6 +22,7 @@ interface SidebarProps {
 }
 
 const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
+  const { signOut, user } = useAuth();
   const menuItems = [
     {
       id: "dashboard",
@@ -107,13 +110,29 @@ const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
       </nav>
 
       {/* Status */}
-      <div className="p-4 border-t border-sidebar-border">
+      <div className="p-4 border-t border-sidebar-border space-y-3">
         <div className="flex items-center gap-3 p-3 rounded-lg bg-sidebar-accent">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-success rounded-full animate-pulse" />
             <span className="text-sm font-medium text-sidebar-accent-foreground">Online</span>
           </div>
           <Zap className="w-4 h-4 text-primary ml-auto" />
+        </div>
+        
+        {/* User info and logout */}
+        <div className="space-y-2">
+          <div className="text-xs text-sidebar-foreground/60 px-3">
+            {user?.email}
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="w-full justify-start text-destructive hover:text-destructive hover:bg-destructive/10"
+            onClick={signOut}
+          >
+            <LogOut className="w-4 h-4 mr-2" />
+            Sair
+          </Button>
         </div>
       </div>
     </div>
