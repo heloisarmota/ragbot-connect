@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Dashboard from "@/components/Dashboard";
+import Clients from "@/components/Clients";
 import KnowledgeBase from "@/components/KnowledgeBase";
 import Conversations from "@/components/Conversations";
 import PdfConverter from "@/components/PdfConverter";
@@ -13,6 +14,8 @@ const Index = () => {
     switch (activeTab) {
       case "dashboard":
         return <Dashboard />;
+      case "clients":
+        return <Clients />;
       case "knowledge":
         return <KnowledgeBase />;
       case "conversations":

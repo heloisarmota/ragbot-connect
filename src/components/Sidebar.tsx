@@ -31,6 +31,12 @@ const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
       badge: null
     },
     {
+      id: "clients",
+      label: "Clientes",
+      icon: Users,
+      badge: null
+    },
+    {
       id: "knowledge",
       label: "Base de Conhecimento",
       icon: Brain,
